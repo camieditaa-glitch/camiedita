@@ -63,15 +63,11 @@ section{margin:0 0 55px}
 }
 .card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(190,111,143,.16)}
 .thumb{
-  aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;
-  background:linear-gradient(135deg,#ffd5e5,#f7b9d1);
-  color:#9b5c76;font-weight:700;font-size:14px;position:relative;
-}
-.thumb:after{
-  content:"▶";width:44px;height:44px;border-radius:50%;
-  background:#fff;display:flex;align-items:center;justify-content:center;
-  color:#d77d9e;box-shadow:0 5px 15px rgba(130,70,95,.13);
-  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit:cover;
+  display:block;
+  position:relative;
 }
 .card-content{padding:16px 17px 18px}
 .card-title{font-weight:700;color:#5c3d4d;margin-bottom:6px}
