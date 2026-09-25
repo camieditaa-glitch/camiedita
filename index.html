@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Camila — Video Editor</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap');
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  color:#5b4050;
+  font-family:'DM Sans',Arial,sans-serif;
+  background:
+    radial-gradient(circle at 10% 10%, #ffd9e8 0, transparent 28%),
+    radial-gradient(circle at 90% 20%, #ffeaf3 0, transparent 30%),
+    linear-gradient(180deg,#fff7fa 0%,#fff1f6 50%,#fff9fb 100%);
+}
+body:before{
+  content:"";
+  position:fixed; inset:0; pointer-events:none; opacity:.22;
+  background-image:radial-gradient(#e6a8bf 0.7px,transparent .7px);
+  background-size:18px 18px;
+}
+.page{position:relative;max-width:980px;margin:auto;padding:34px 22px 70px}
+nav{
+  display:flex;justify-content:center;gap:22px;flex-wrap:wrap;
+  margin-bottom:42px;font-size:14px;font-weight:600;
+}
+nav a{color:#8b5b72;text-decoration:none;padding:8px 12px;border-radius:999px}
+nav a:hover{background:#ffe1ec}
+.hero{text-align:center;padding:15px 0 35px}
+.photo{
+  width:155px;height:155px;border-radius:50%;object-fit:cover;
+  object-position:center 30%;
+  border:7px solid white;
+  box-shadow:0 10px 30px rgba(193,112,145,.22);
+}
+.script{
+  font-family:'Pacifico',cursive;color:#d77d9e;font-size:25px;margin:20px 0 7px;
+}
+h1{font-size:42px;line-height:1.1;margin:0;color:#513846;letter-spacing:-1.5px}
+.subtitle{font-size:17px;color:#916c7e;margin:13px 0 0}
+.pill{
+  display:inline-block;margin-top:18px;padding:9px 15px;border-radius:999px;
+  background:#ffdce9;color:#a45175;font-weight:700;font-size:13px;
+}
+.divider{
+  height:1px;margin:10px 0 46px;
+  background:linear-gradient(90deg,transparent,#edb8cc,transparent);
+}
+section{margin:0 0 55px}
+.section-title{text-align:center;font-size:25px;color:#5a3d4c;margin:0 0 23px}
+.section-title span{font-family:'Pacifico',cursive;color:#d77d9e;font-weight:400}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{
+  display:block;text-decoration:none;color:inherit;overflow:hidden;
+  background:rgba(255,255,255,.8);border:1px solid #f0c7d7;
+  border-radius:22px;box-shadow:0 8px 25px rgba(190,111,143,.09);
+  transition:.2s transform,.2s box-shadow;
+}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(190,111,143,.16)}
+.thumb{
+  aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(135deg,#ffd5e5,#f7b9d1);
+  color:#9b5c76;font-weight:700;font-size:14px;position:relative;
+}
+.thumb:after{
+  content:"▶";width:44px;height:44px;border-radius:50%;
+  background:#fff;display:flex;align-items:center;justify-content:center;
+  color:#d77d9e;box-shadow:0 5px 15px rgba(130,70,95,.13);
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+}
+.card-content{padding:16px 17px 18px}
+.card-title{font-weight:700;color:#5c3d4d;margin-bottom:6px}
+.card-note{font-size:13px;color:#a07c8d}
+.about{
+  max-width:670px;margin:auto;text-align:center;line-height:1.8;
+  color:#866676;font-size:16px;
+}
+.contact-box{
+  background:rgba(255,255,255,.78);border:1px solid #efc5d6;
+  border-radius:26px;padding:30px;text-align:center;
+  box-shadow:0 10px 28px rgba(190,111,143,.09);
+}
+.buttons{display:flex;justify-content:center;gap:11px;flex-wrap:wrap;margin-top:20px}
+.btn{
+  padding:12px 18px;border-radius:999px;text-decoration:none;
+  color:#fff;background:#d77d9e;font-weight:700;
+  box-shadow:0 7px 15px rgba(215,125,158,.22);
+}
+.btn:hover{background:#c96f91}
+.btn.secondary{color:#a45175;background:#ffe2ec;box-shadow:none}
+footer{text-align:center;color:#b18b9b;font-size:13px;margin-top:42px}
+@media(max-width:650px){
+  .page{padding:25px 15px 55px}
+  h1{font-size:34px}
+  .grid{grid-template-columns:1fr}
+  .photo{width:135px;height:135px}
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<nav>
+  <a href="#work">Work</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <a href="https://www.instagram.com/camieditaa/" target="_blank">Instagram</a>
+</nav>
+
+<header class="hero">
+  <img class="photo" src="camila.jpg" alt="Camila">
+  <div class="script">hi, i'm</div>
+  <h1>Camila!</h1>
+  <p class="subtitle">Video Editor &amp; Content Creator</p>
+  <div class="pill">♡ available for work ♡</div>
+</header>
+
+<div class="divider"></div>
+
+<section id="work">
+  <h2 class="section-title">a little look at <span>my work</span></h2>
+  <div class="grid">
+    <a class="card" href="#" target="_blank">
+      <div class="thumb">ADD YOUR THUMBNAIL</div>
+      <div class="card-content">
+        <div class="card-title">Your project #1</div>
+        <div class="card-note">Watch on YouTube →</div>
+      </div>
+    </a>
+    <a class="card" href="#" target="_blank">
+      <div class="thumb">ADD YOUR THUMBNAIL</div>
+      <div class="card-content">
+        <div class="card-title">Your project #2</div>
+        <div class="card-note">Watch on YouTube →</div>
+      </div>
+    </a>
+    <a class="card" href="#" target="_blank">
+      <div class="thumb">ADD YOUR THUMBNAIL</div>
+      <div class="card-content">
+        <div class="card-title">Your project #3</div>
+        <div class="card-note">Watch on YouTube →</div>
+      </div>
+    </a>
+    <a class="card" href="#" target="_blank">
+      <div class="thumb">ADD YOUR THUMBNAIL</div>
+      <div class="card-content">
+        <div class="card-title">Your project #4</div>
+        <div class="card-note">Watch on YouTube →</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">about <span>me</span> ♡</h2>
+  <p class="about">
+    Hi! I'm Camila, a video editor who loves turning raw footage into fun,
+    engaging and personality-filled videos. Take a look around and check out
+    some of my work!
+  </p>
+</section>
+
+<section id="contact">
+  <div class="contact-box">
+    <h2 class="section-title" style="margin-bottom:8px">let's work <span>together!</span></h2>
+    <p class="about" style="font-size:14px">Have a project in mind? I'd love to hear from you ♡</p>
+    <div class="buttons">
+      <a class="btn" href="mailto:camieditaa@gmail.com">Email me</a>
+      <a class="btn secondary" href="https://www.instagram.com/camieditaa/" target="_blank">Instagram</a>
+      <a class="btn secondary" href="https://www.youtube.com/@camieditaa" target="_blank">YouTube</a>
+    </div>
+  </div>
+</section>
+
+<footer>made with ♡ by Camila</footer>
+</div>
+</body>
+</html>
